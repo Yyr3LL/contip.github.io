@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+    background-color: #ccffff;
+}
+
+#index-rest {
+    margin: 20px;
+    margin-top: 70px;
+}
+
+#rest {
+    position: relative;
+    left: 25%;
+    right: 25%;
+    margin: 20px;
+    margin-top: 70px;
+}
+
+.sticky {
+    width: 100%;
+    position: fixed;
+    margin-top: 0%;
+    padding-top: 0%;
+    top: -5px;
+    z-index: 2;
+}
+
+ul.topnav {
+    list-style-type: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.555);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {
+    float: left;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+ul.topnav li:hover {
+    background-color: #555555;
+    color: white;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #000000;}
+
+ul.topnav li a.active {
+    background-color: #80aaff;
+    color: #000000;
+}
+
+ul.topnav li.right {float: right;}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+cards {
+  max-width: 960px;
+  margin: 0 auto 30px;
+}
+
+article {
+  position: relative;
+}
+
+.article-img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.article-title {
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+h4 {
+    padding: 5px;
+    width: 50%;
+    box-shadow: 0 0 7px rgba(0,0,0,0.5);
+}
+
+.genres {
+    position: relative;
+    padding: 5px;
+    width: 50%;
+    list-style-type: none;
+    box-shadow: 0 0 7px rgba(0,0,0,0.5);
+}
+
+.content {
+    width: 100%;
+    text-align: center;
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.button:hover {
+  background-color: #555555;
+  color: white;
+}
+
+input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: solid 2px grey;
+    background-color:#ccffff;
+}
+
+img.movie-content {
+    margin-top: 100px;
+}
+.movie-content {
+    position: relative;
+    width: 70%;
+    left: 15%;
+    right: 15%;
+}
+
+@media screen and (max-width: 1080px) {
+
+    body {
+        font-size: 35px;
+        /* overflow: hidden; Hide scrollbars */
+        -ms-overflow-style: none;
+        overflow: -moz-scrollbars-none;
+
+    }
+
+    #rest {
+        margin-top: 280px;
+        position: relative;
+        width: 80%;
+        left: 10%;
+        right: 10%;
+    }
+
+    h4 {
+        font-size: 40px;
+        width: 100%;
+    }
+
+    button {
+        font-size: 30px;
+    }
+
+    #index-rest {
+        position: relative;
+        margin-top: 280px;
+        width: 80%;
+        left: 10%;
+        right: 10%;
+    }
+
+    img.movie-content {
+        margin-top: 280px;
+    }
+    .movie-content {
+        position: relative;
+        width: 90%;
+        left: 5%;
+        right: 5%;
+    }
+
+    html {
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent; 
+    }
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+
+    .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(75%, 1fr));
+    grid-gap: 30px;
+    }
+
+    .article-img {
+    height: 430px;
+    width: 100%;
+    object-fit: cover;
+    }
+
+    .article-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 35px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    ul.topnav li a {
+        font-size: 40px;
+    }
+
+}
